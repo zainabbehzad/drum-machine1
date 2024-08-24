@@ -141,22 +141,22 @@ const DrumMachine = () => {
           {isListening ? 'Stop Voice Control' : 'Start Voice Control'}
         </button>
         <div className="volume-container">
-          <div>
-            <label htmlFor="volume-slider">Volume:</label>
-            <input
-            id="volume-slider"
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value={voiceVolume}
-            onChange={handleVolumeChange}
-            aria-labelledby="volume-label"
-          />
-        </div>
+  <div>
+    <label htmlFor="volume-slider">Volume:</label>
+    <input
+      id="volume-slider"
+      type="range"
+      min="0"
+      max="1"
+      step="0.1"
+      value={voiceVolume}
+      onChange={handleVolumeChange}
+      aria-labelledby="volume-label"
+    />
+  </div>
+</div>
       </div>
-      </div>
-      </div>
+    </div>
   );
 };
 export default DrumMachine;
