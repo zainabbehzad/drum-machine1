@@ -5,7 +5,8 @@ Project Description 📝
 The Drum Machine is a web-based application built with React that allows users to create and play their own drum beats. It features a grid of clickable drum pads, each representing a different drum sound. Users can trigger the drum sounds by clicking the pads or pressing corresponding keys on their keyboard. The Drum Machine also includes features like volume control, power/mode switching, and visual feedback to enhance the user experience. The application is designed to be responsive and optimized for both desktop and mobile devices, making it easy for users to create and experiment with drum patterns anywhere. The Drum Machine project showcases the use of React components, audio playback, state management, and user interactivity to build a fun and interactive musical tool.💻📝🚀
 
 Demo 📸
-![Screenshot (170)](https://github.com/user-attachments/assets/192848c4-4578-4050-bb17-22e7ab9588b4)
+![Screenshot (187)](https://github.com/user-attachments/assets/0fe0771b-8229-47c7-94b0-1286f8968b97)
+
 
 
 
