@@ -140,18 +140,20 @@ const DrumMachine = () => {
         <button type="button" className="voice-control-btn" onClick={toggleVoiceControl}>
           {isListening ? 'Stop Voice Control' : 'Start Voice Control'}
         </button>
-        <div className="volume-container">
-          <label htmlFor="volume-slider">Volume:</label>
-          <input
-            id="volume-slider"
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value={voiceVolume}
-            onChange={handleVolumeChange}
-          />
-        </div>
+        <form>
+          <div className="volume-container">
+            <label htmlFor="volume-slider">Volume</label>
+            <input
+              id="volume-slider"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value={voiceVolume}
+              onChange={handleVolumeChange}
+            />
+          </div>
+       </form>
       </div>
     </div>
   );
