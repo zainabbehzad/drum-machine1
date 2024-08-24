@@ -150,7 +150,6 @@ const DrumMachine = () => {
             step="0.1"
             value={voiceVolume}
             onChange={handleVolumeChange}
-            aria-labelledby="volume-label"
           />
         </div>
       </div>
