@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 
-const DrumMachine = () => {
+function DrumMachine() {
   const drumPads = [
     { id: 'drum-pad-Q', sound: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3', key: 'Q' },
     { id: 'drum-pad-W', sound: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3', key: 'W' },
@@ -140,9 +140,9 @@ const DrumMachine = () => {
         <button type="button" className="voice-control-btn" onClick={toggleVoiceControl}>
           {isListening ? 'Stop Voice Control' : 'Start Voice Control'}
         </button>
-        <form>
-          <div className="volume-container">
-            <label htmlFor="volume-slider">Volume</label>
+        <div className="volume-container">
+          <label>
+            Volume:
             <input
               id="volume-slider"
               type="range"
@@ -152,10 +152,10 @@ const DrumMachine = () => {
               value={voiceVolume}
               onChange={handleVolumeChange}
             />
-          </div>
-       </form>
+          </label>
+        </div>
       </div>
     </div>
   );
-};
+}
 export default DrumMachine;
