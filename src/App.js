@@ -157,4 +157,3 @@ const DrumMachine = () => {
   );
 };
 export default DrumMachine;
-
