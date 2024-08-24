@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 
@@ -144,7 +145,6 @@ function DrumMachine() {
           <label>
             Volume:
             <input
-              id="volume-slider"
               type="range"
               min="0"
               max="1"
