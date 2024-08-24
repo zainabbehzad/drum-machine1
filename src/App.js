@@ -20,6 +20,24 @@ const DrumMachine = () => {
   const [recognition, setRecognition] = useState(null);
   const [voiceVolume, setVoiceVolume] = useState(1);
 
+  const handleVoiceCommand = (event) => {
+    const transcript = event.results[event.results.length - 1][0].transcript.trim().toUpperCase();
+    const pad = drumPads.find((p) => p.key === transcript);
+    if (pad) {
+      const audio = audioRefs.current[pad.key];
+      if (audio) {
+        audio.currentTime = 0;
+        try {
+          audio.volume = voiceVolume;
+          audio.play();
+          setDisplayText(pad.key);
+        } catch (err) {
+          console.error('Error playing audio:', err);
+        }
+      }
+    }
+  };
+
   useEffect(() => {
     const initializeVoiceRecognition = () => {
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -69,24 +87,6 @@ const DrumMachine = () => {
         setDisplayText(key);
       } catch (err) {
         console.error('Error playing audio:', err);
-      }
-    }
-  };
-
-  const handleVoiceCommand = (event) => {
-    const transcript = event.results[event.results.length - 1][0].transcript.trim().toUpperCase();
-    const pad = drumPads.find((p) => p.key === transcript);
-    if (pad) {
-      const audio = audioRefs.current[pad.key];
-      if (audio) {
-        audio.currentTime = 0;
-        try {
-          audio.volume = voiceVolume;
-          audio.play();
-          setDisplayText(pad.key);
-        } catch (err) {
-          console.error('Error playing audio:', err);
-        }
       }
     }
   };
