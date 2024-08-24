@@ -79,8 +79,3 @@ Author 👩‍💻
 LinkedIn: Zainab Behzad
 Email: [zainabbehzad03@gmail.com]
 Github: zainabbehzad
-
-
-Acknowledgements 🙏
-Marked.js - The library used for Markdown parsing.
-React - The JavaScript library used to build the application.
