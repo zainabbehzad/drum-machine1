@@ -8,7 +8,7 @@ Demo 📸
 ![Screenshot (187)](https://github.com/user-attachments/assets/0fe0771b-8229-47c7-94b0-1286f8968b97)
 
 
-Live Dem0:[https://drum-machine1-gxa1jhouf-zainab-behzads-projects.vercel.app]
+Live Dem0:[https://drum-machine1-mzt8-dbbbmitly-zainab-behzads-projects.vercel.app/]
 
 
 
